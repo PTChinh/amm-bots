@@ -3,11 +3,17 @@ package main
 import (
 	"github.com/hydroprotocol/amm-bots/algorithm"
 	"github.com/hydroprotocol/amm-bots/client"
+	"github.com/joho/godotenv"
 	"github.com/shopspring/decimal"
+	"log"
 	"os"
 )
 
 func main() {
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Error loading .env file")
+	}
 
 	botType := os.Getenv("BOT_TYPE")
 
