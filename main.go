@@ -20,14 +20,14 @@ func main() {
 
 /*
 Env checklist:
- - BOT_PRIVATE_KEY
- - BOT_QUOTE_TOKEN
- - BOT_BASE_URL
- - BOT_MIN_PRICE
- - BOT_MAX_PRICE
- - BOT_PRICE_GAP
- - BOT_EXPAND_INVENTORY
- - BOT_WEB3_URL
+  - BOT_PRIVATE_KEY
+  - BOT_QUOTE_TOKEN
+  - BOT_BASE_URL
+  - BOT_MIN_PRICE
+  - BOT_MAX_PRICE
+  - BOT_PRICE_GAP
+  - BOT_EXPAND_INVENTORY
+  - BOT_WEB3_URL
 */
 func startConstProductBot() {
 	privateKey := os.Getenv("BOT_PRIVATE_KEY")
@@ -55,5 +55,4 @@ func startConstProductBot() {
 	)
 
 	bot.Run()
-
 }
